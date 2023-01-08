@@ -53,6 +53,7 @@ namespace PdfSharp.Pdf.Advanced
             cid.Elements.SetString("/Registry", "Adobe");
             cid.Elements.SetInteger("/Supplement", 0);
             Elements.SetValue(Keys.CIDSystemInfo, cid);
+            this.Elements.SetName(Keys.CIDToGIDMap, "/Identity");
 
             FontDescriptor = fontDescriptor;
             // ReSharper disable once DoNotCallOverridableMethodsInConstructor
@@ -72,6 +73,7 @@ namespace PdfSharp.Pdf.Advanced
             cid.Elements.SetString("/Registry", "Adobe");
             cid.Elements.SetInteger("/Supplement", 0);
             Elements.SetValue(Keys.CIDSystemInfo, cid);
+            this.Elements.SetName(Keys.CIDToGIDMap, "/Identity");
 
             FontDescriptor = fontDescriptor;
             // ReSharper disable once DoNotCallOverridableMethodsInConstructor
